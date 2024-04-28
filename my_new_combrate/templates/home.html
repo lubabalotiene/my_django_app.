@@ -1,0 +1,10 @@
+
+<h1>Combrate List</h1>
+<div class="container">
+    {% for combrate in my_new_combrate %}
+    <div class="row">
+        <h2><a href="{% url 'my_new_combrate:detail' combrate.id %}">{{ combrate.name }}</a></h2>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
